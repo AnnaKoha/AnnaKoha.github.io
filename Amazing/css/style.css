@@ -1,0 +1,260 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+}
+.head__box{
+    margin-left: 209px;
+    margin-top: 272px;
+}
+h1{
+    font-size: 72px;
+    letter-spacing: -1.9px;
+    line-height: 87.5px;
+    margin-bottom: 0px;
+    
+}
+.head__text{
+    font-size: 30px;
+    max-width: 598px;
+    margin-top: 30px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
+}
+.first-block__box{
+    margin-left: 56px;
+    margin-top: 84px;
+}
+.h2{
+    font-weight:500;
+    text-transform: uppercase; 
+    font-size: 24px;
+}
+.first-block-text h2{
+    letter-spacing: -0.5px;
+    margin-bottom: 0px;
+}
+
+.first-block-text p{
+    font-size: 36px;
+    max-width: 565px;
+    margin-top: 30px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
+}
+.social-text__box{
+    margin-left: 205px;
+    margin-top: 116px;
+}
+.social-text h2{
+
+    letter-spacing: -0.9px;
+  
+}
+.social-text p{
+    font-size: 36px;
+    max-width: 508px;
+    margin-top: 30px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
+    margin-bottom: 51px;
+}
+
+.follow__box{
+    margin-left: 205px;
+    margin-top: 116px;
+   }
+
+.itunes__box{
+    margin-left: 63px;
+    margin-top: 116px;
+}
+.follow__box h2{
+    letter-spacing: -0.9px;
+}
+
+.follow__box  p{
+    font-size: 36px;
+    max-width: 508px;
+    margin-top: 30px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
+    margin-bottom: 51px;
+}
+.itunes__box p{
+    font-size: 36px;
+    max-width: 508px;
+    margin-top: 30px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
+    margin-bottom: 51px;
+}
+.follow__box .btn{
+    padding: 14px 47px;  
+}
+.itunes__box .btn{
+    padding: 14px 49px;  
+}
+
+.btn{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border: #ffffff 2px solid;
+    border-radius: 30px;
+    padding: 14px 54px;
+}
+
+
+
+.btn:hover {color:#0000FF} 
+.btn:active {color:#0000FF} 
+
+.itunes h2{
+    
+    letter-spacing: -0.5px;
+}
+
+
+@media only screen and (min-width : 1300px) {
+
+    .grid{
+        display:grid;
+        grid-template-areas: "a a a a"  "b b c c" "d e f g" "h h i j" "k k l l";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 900px  repeat(4, minmax(515px, 1fr)) ;
+        
+    }
+
+
+ 
+ }
+
+
+
+
+@media only screen and (max-width : 1300px) {
+    .grid{
+        display: grid;
+        grid-template-areas: "a"  "c" "h" "k" "l";
+        grid-template-columns: 100%;
+      }
+    h1{
+        font-size: 32px;
+    }
+
+    .btn{
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border: #ffffff 2px solid;
+    border-radius: 30px;
+    padding: 10px 10px; 
+    }
+
+    .follow__box .btn{
+        padding: 10px 10px; 
+ 
+    }
+    .itunes__box{
+        padding-bottom: 100px;
+        max-width: 80%; 
+    }
+    .itunes__box .btn{
+        padding: 10px 10px;  
+       
+    }
+    .follow__box{
+        margin-left: 63px;
+        margin-top: 116px;
+        padding-bottom: 100px;
+        max-width: 80%; 
+    }
+    .first-block__box{
+        margin-left: 63px;
+        margin-top: 116px;
+        padding-bottom: 100px;
+        max-width: 80%; 
+    }
+    .head__box{
+        margin-left: 63px;
+        margin-top: 116px;
+        padding-bottom: 100px;
+        max-width: 80%; 
+    }
+    .social-text__box{
+        margin-left: 63px;
+        margin-top: 116px;
+        padding-bottom: 100px;
+        max-width: 80%; 
+    }
+}
+
+
+.grid-item{
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:block;
+
+}
+
+.head{
+    background-image: url(../img/header.png);
+
+    grid-area: a;
+    color: #000000;
+}
+
+.first-block-img{
+    background-image: url(../img/slide_1_red.png);
+    grid-area: b;
+}
+.first-block-text{
+    grid-area: c;
+    background-color:#f3f1ef;
+    color:#666666;
+}
+.pictures-first
+{
+    background-image: url(../img/THUMBNAIL.png);
+     grid-area: d;
+}
+.pictures-second{
+    background-image: url(../img/THUMBNAIL-1.png);
+    grid-area: e;
+}
+
+.pictures-third{
+    background-image: url(../img/THUMBNAIL-2.png);
+    grid-area: f;
+}
+
+.pictures-fourth{
+    background-image: url(../img/THUMBNAIL-3.png);
+    grid-area: g;
+}
+.social-text{
+    grid-area: h; 
+    background-color: #3f729b;
+    color: #ffffff;
+}
+
+.social-img{
+    background-image: url(../img/THUMBNAIL-4.png);
+    grid-area: i;
+}
+.social-block-blue{
+    grid-area: j;
+    background-color: #3f729b;
+}
+.follow{
+    grid-area: k;
+    background-color: #2ebd59;
+    color: #ffffff;
+}
+.itunes{
+    grid-area: l;
+    background-color: #282b2f;
+    color: #ffffff;
+}
