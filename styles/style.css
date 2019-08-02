@@ -35,7 +35,7 @@ span{
    width: 399px;
    height: 299px;
    background-repeat: no-repeat;
-   background-size: contain; 
+   background-size: cover; 
    }
    .work-item{
        padding: 15px;
