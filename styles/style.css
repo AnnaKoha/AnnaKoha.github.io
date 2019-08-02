@@ -1,0 +1,46 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #fafafa;
+}
+h1 h2 h3 {
+    font-weight: 700;
+}
+.work-list{
+    display: flex;
+    height: 100px;
+    list-style-type: none;
+}
+
+.work-item{
+    border-radius: 3px;
+    border: 1px;
+    background: #FFF;
+    display: block;
+    margin: 10px;
+    
+    
+}
+span{
+    font-size: 15px;
+}
+
+.portfolio{
+    background: #fafafa;
+}
+.autor {
+    display: flex;
+  }
+  .autor__ava {
+   background-image: url(../img/photo_2019-07-30_23-47-37.jpg);
+   width: 399px;
+   height: 299px;
+   background-repeat: no-repeat;
+   background-size: contain; 
+   }
+   .work-item{
+       padding: 15px;
+       
+   }
+
+  
+
