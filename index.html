@@ -28,10 +28,10 @@
                     <div class="collapse navbar-collapse justify-content-end nav-main-navbar__list" id="navbarNav">
                       <ul class="navbar-nav">
                        <li class="nav-item active">
-                          <a class="nav-link" href="https://annakoha.github.io/#2">О себе</a>
+                          <a class="nav-link" href="#ex1">О себе</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="https://annakoha.github.io/#3">Портфолио</a>
+                          <a class="nav-link" href="#ex2">Портфолио</a>
                         </li>
                        </ul>
                     </div>
@@ -39,7 +39,7 @@
                 </div>
             </header>
             <h1 class="visually-hidden">Портфолио frontend разработчика</h1> 
-            <a name="2"></a>
+           
             <section class="grid-post autor block2">
                     <div class="container">
                         <div class="row">
@@ -67,7 +67,7 @@
                             </div>
                         </div>
             </section>
-    <section class="grid-post about">
+    <section class="grid-post about" id="ex1">
             <div class="container">
                <h2 class="title visually-hidden">Обо мне</h2>
                 <nav class="" id="about-nav">
@@ -103,9 +103,9 @@
                                             <li>2013 - 2019</li>
                                             <li></li>
                                             <li>
-                                                Разработка web и desktop приложений, аналитики и отчетов в FastReport, написание хранимых процедур и SQL-запросов, планы выполнения запросов.
+                                                Разработка web и desktop приложений,  отчетов в FastReport и DevExpress, написание хранимых процедур и SQL-запросов, планов выполнения запросов.
                                                 </li>
-                                            <li>Опыт работы с <span>C#</span>, <span>.NET Framework</span>, <span>MVC</span>, <span>MS Sql</span>, <span>FastReport</span> <span>JQuery</span> <span>Photoshop</span></li>
+                                            <li>Опыт работы с <span>C#</span>, <span>.NET Framework</span>, <span>ASP.NET MVC</span>, <span>MS Sql</span>, <span>FastReport</span>, <span>DevExpress</span>, <span>JQuery</span>, <span>Photoshop</span></li>
                                             </ul>
                                 </div>
                                 <div class="col-md-5">
@@ -134,7 +134,7 @@
                                 <li>jQuery, JavaScript</li>
                                 
                             </ul>
-                            <p class="list">Уровень английского языка - pre-intermediate</p>
+                            <p>Уровень английского языка - pre-intermediate</p>
                     </div>
                     <div class="col-md-3">
                             <ul class="list skills-list">
@@ -149,7 +149,7 @@
                     <div class="col-md-3">
                             <ul class="list skills-list">
                                 <li>ООП</li>
-                                <li>C#, ASP.Net</li>
+                                <li>C#, .NET Framework</li>
                                 <li>MS Sql</li>
                                 <li>FastReport</li>
                                 
@@ -167,7 +167,7 @@
                                 <ul class="list">
                                     <li><span>Барановичский государственный университет</span>, Барановичи</li>
                                     <li>2008 - 2013</li>
-                                    <li>Инженерный , Информационные системы и технологии</li>
+                                    <li>Инженерный факультет, Информационные системы и технологии</li>
                                     <li><span>Инженер-программист</span> </li>
                                 </ul>
                             </div> 
@@ -207,7 +207,7 @@
         </div>
     </section>
     <a name="3"></a>
-    <section class="grid-post portfolio block3">
+    <section class="grid-post portfolio block3" id="ex2">
         <div class="container">
             <h2 class="portfolio__title title visually-hidden" >Портфолио</h2>
             <div class="row">
@@ -320,21 +320,16 @@
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-   <script>
-    $('#myTab a').on('click', function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-    })
- 
-    $( '#MyNavbar .navbar-nav a' ).on( 'click', function () {
-	$( '#MyNavbar .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
-	$( this ).parent( 'li' ).addClass( 'active' );
-    });
-
-
-
-   
- </script>
+    <script>
+        $('#myTab a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+        })
+        $( '#MyNavbar .navbar-nav a' ).on( 'click', function () {
+        $( '#MyNavbar .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+        $( this ).parent( 'li' ).addClass( 'active' );
+        });
+   </script>
 
 </body>
 </html>
