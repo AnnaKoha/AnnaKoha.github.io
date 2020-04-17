@@ -1,5 +1,5 @@
 <?php 
-
+var_dump("привет");
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';

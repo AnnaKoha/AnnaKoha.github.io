@@ -4,29 +4,24 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Calstroy</title>
+        
         <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicon1.ico"/>
-        <!-- <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png"> -->
+        <meta name="keywords" content="calstroy, build, building, developer, construction of houses"/>
+        <meta name="description" content="construction of houses" />
+        <link rel="shortcut icon" href="../img/favicons/favicon.ico"/>
 
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,600;1,100&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="../styles/main.min.css">
         
     </head>
     <body>
             <header class="nav-main">
+                <h1 class="visually-hidden">Calstroy</h1>
                 <nav class="navbar navbar-expand-lg navbar-default nav-main-navbar fixed-top" id="MyNavbar">
                     <div class="container">
                         <button class="navbar-toggler navbar-default navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,26 +44,31 @@
                     <div class="section-header__content container">
                         <div class="row">
                             <div class="col-auto">
-                                <h1 class="section-header__title ">Calstroy
+                                <h2 class="section-header__title ">Calstroy
                                     <span class="section-header__title_text">Welcome home</span>
-                                </h1>
+                                </h2>
                                 <div id="container_button">
-                                    <button class="learn-more" href="#ex2">
+                                    <a class="learn-more" href="#ex2" id="button_id">
                                       <span class="circle" aria-hidden="true">
                                         <span class="icon arrow"></span>
                                       </span>
                                       <span class="button-text">Learn More</span>
-                                    </button>
+                                    </a>
                                   </div>
                                 
                             </div>
                             <div class="col-md-6">
                                 <div class="section-header__img"></div>
                             </div>
-                        </div>  
-                              
-                </section>
-                <a href="#ex1" class="scroll-down-btn">Oooo</a>   
+                        </div> 
+                        
+                    </div> 
+                    <div class="button-scroll">
+                        <div class="">
+                            <a href="#ex1" class="scroll-down-btn button-scroll__down arrow"></a> 
+                        </div>
+                        </div>         
+                </section>  
              </header>
         <main>
             <section class="grid-post portfolio" id="ex1">
@@ -113,15 +113,19 @@
                             </figure>
                             <figure>
                                 <a data-fancybox="gallery" href="../img/page/img_5.jpg" target="_blank" class="card"  >
-                                    <img src="../img/page/img_5.jpg" class="card-img-top img-fluid" style="height: 300px;" alt="Vivalingava">
+                                    <img src="../img/page/img_5.jpg" class="card-img-top img-fluid" style="max-height: 300px;" alt="Vivalingava">
                                    </a>
                             </figure>
                            
                         </div>
                     </div>
+                     
                 </div>
-                <a href="#ex2" class="scroll-down-btn">Oooo</a>  
+                <div class="button-scroll">
+                    <a href="#ex1" class="scroll-down-btn"><img class="button-scroll__img" src="../img/page/download.svg" alt="download scroll"></a> 
+                </div> 
             </section>
+            
             <section class="contact" id="ex2">
                 <h2 class="visually-hidden">Contacts</h2>
                 <div class="row contact__row">
@@ -129,67 +133,34 @@
                        
                     </div>
                     <div class="col-md-6">
-                        <div class="container">
+                          <div class="container">
 
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <form action="mail.php" method="POST">
-                                        <legend>Заголовок формы</legend>
-                      
-                                        <div class="form-group">
-                                            <label for="">Введите ваше имя</label>
-                                            <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
-                                        </div>
-                                    
-                                        <div class="form-group">
-                                            <label for="">Введите номер телефона</label>
-                                            <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
-                                        </div>
-                                    
-                                        <div class="form-group">
-                                            <label for="">Введите email</label>
-                                            <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
-                                        </div>
-                                    
-                                        <button type="submit" class="btn btn-primary">Отправить форму</button>
-                                    </form>
-                                </div><!-- .col-sm-4 -->
-                            </div> <!-- .row -->
-                      
-                          </div><!-- /.container -->
-                        <!-- <div class="form-wrapper">
+      <div class="row">
+      	<div class="col-sm-4">
+      		<form action="mail.php" method="POST">
+      			<legend>Заголовок формы</legend>
 
-                            <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
-                                <p class="contact-form__title">Оставьте заявку на расчет стоимости</p>
-                                <p class="contact-form__description"></p>
-                                <div class="contact-form__input-wrapper">
-                                    <input name="name" type="text" class="contact-form__input contact-form__input_name"
-                                        placeholder="Введите ваше имя">
-                                    <div class="contact-form__error contact-form__error_name"></div>
-                                </div>
-                                
-                                <div class="contact-form__input-wrapper">
-                                    <input name="tel" type="tel" class="contact-form__input contact-form__input_tel"
-                                        placeholder="Введите ваш телефон">
-                                    <div class="contact-form__error contact-form__error_tel"></div>
-                                </div>
-                    
-                                <div class="contact-form__input-wrapper"> 
-                                    <input name="email" type="email" class="contact-form__input contact-form__input_email"
-                                        placeholder="Введите ваш email">
-                                    <div class="contact-form__error contact-form__error_email"></div>
-                                </div>
-                    
-                                <button class="contact-form__button" type="submit"> Получить прайс </button>
-                            </form>
-                            
-                        </div> -->
-                        <!-- <form onsubmit="myFunctionForm()" id="myForm" class="form">
-                            <input type="text" name="mfbName" placeholder="Имя:" required/>
-                            <input type="text" name="mfbMail" placeholder="Email:" required/>
-                            <input type="text" name="mfbPhone" placeholder="Телефон:" required/>
-                            <input type="submit" value="Отправить" />
-                            </form> -->
+      			<div class="form-group">
+      				<label for="">Введите ваше имя</label>
+      				<input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+      			</div>
+      		
+      			<div class="form-group">
+      				<label for="">Введите номер телефона</label>
+      				<input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+      			</div>
+      		
+      			<div class="form-group">
+      				<label for="">Введите email</label>
+      				<input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+      			</div>
+      		
+      			<button type="submit" class="btn btn-primary">Отправить форму</button>
+      		</form>
+      	</div><!-- .col-sm-4 -->
+      </div> <!-- .row -->
+
+    </div>
 
                     </div>
                 </div>
@@ -203,27 +174,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- <script>
-        function myFunctionForm(){
-           var str = $(this).serialize();
-        $.ajax({
-        type: "POST",
-        url: "contact.php",
-        data: str,
-        success: function(msg) {
-        if(msg == 'ok') {
-        alert('Письмо отправлено');
+   <script>
+       const anchors = document.querySelectorAll('a[href*="#"]')
+
+        for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+            
+            const blockID = anchor.getAttribute('href').substr(1)
+            
+            document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+            })
+        })
         }
-        else {
-        alert('Ошибка! Возможно вы неправильно заполнили поля.');
-        }
-        }
-        });
-        return false;
-        }      
-    
-         </script> -->
-    <script src="../js/main.min.js"></script>
+   </script>
+   
         
     </body>
 </html>
